@@ -7,4 +7,11 @@ public class HDFC  extends Bank{
 		return 9;
 	}
 
+	@Override
+	String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	//ArithmeticException
+
 }

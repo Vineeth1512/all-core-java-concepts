@@ -1,5 +1,6 @@
 package collections.com;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -15,7 +16,11 @@ public class LinkedListProgram {
 		obj.add(4);
 		System.out.println("Output " + obj);
 		obj.remove(3);
+
 		obj.set(2, "Harshaaaa");
+		System.out.println(">>>>>>>reverse <<<<<<");
+		Collections.reverse(obj);
+		System.out.println(obj);
 		System.out.println("=> Using FOREACH  LOOP");
 		for (Object a : obj) {
 			System.out.println(a);

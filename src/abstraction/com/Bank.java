@@ -1,5 +1,9 @@
 package abstraction.com;
 
-public  abstract class Bank {
-abstract int getIntrestRatde();
+public abstract class Bank {
+	 int getIntrestRatde() {
+		return 0;
+	}
+
+	abstract String getName();
 }

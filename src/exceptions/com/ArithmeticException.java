@@ -1,6 +1,10 @@
 package exceptions.com;
 
 public class ArithmeticException {
+	public  static void add() {
+		System.out.println("static method::::");
+	}
+	
 	public static void main(String[] args) {
 		try {
 			int a = 4;
@@ -10,5 +14,6 @@ public class ArithmeticException {
 		} catch (Exception e) {
 			System.out.println("Cannot divide a number by 0");
 		}
+		add();
 	}
 }
