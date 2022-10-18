@@ -2,8 +2,8 @@ package arrayPrograms;
 
 public class LargestAndSmallestArray {
 	public static void main(String[] args) {
-		int a[] = { 3, 6, 7, 9, 8, 66 };
-		int k = 2;
+		int a[] = { 3, 6, 7, 9, 8, 55, 63, 66 };
+		int k = 3;
 		int temp = 0;
 
 		for (int i = 0; i < a.length; i++) {
@@ -15,11 +15,11 @@ public class LargestAndSmallestArray {
 					a[j] = temp;
 				}
 			}
-			if (i == k) {
+			if (i == k - 1) {
 				System.out.println(a[i]);
 				break;
 			}
-		//	System.out.println(a[i]);
+			// System.out.println(a[i]);
 
 		}
 

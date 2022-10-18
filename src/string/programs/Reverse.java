@@ -6,20 +6,10 @@ import java.util.List;
 
 public class Reverse {
 	public static void main(String[] args) {
-		/*
-		 * Scanner scan = new Scanner(System.in);
-		 * System.out.println("enter the number"); int num = scan.nextInt(); int rev =
-		 * 0; int rem; while (num > 0) { rem = num % 10;
-		 * System.out.println(">>>>Rem.<<<< " + rem); rev = rev * 10 + rem;
-		 * 
-		 * num = num / 10; System.out.println(">>>>>NUM<<<< : "+num); }
-		 * 
-		 * System.out.println(rev);
-		 * 
-		 */
+		
 		String s = "vineeth";
 		String str = "";
-		System.out.println("before: " + str);
+		//System.out.println("before: " + str);
 		for (int i = 0; i < s.length(); i++) {
 			str = s.charAt(i) + str;
 			System.out.println("for: " + str);

@@ -51,10 +51,13 @@ public class ArrayAscendingOrder {
 		// Find nth Largest element in
 		Integer nthLargest = list.stream().distinct().sorted(Collections.reverseOrder()).skip(1).findAny().get();
 		System.out.println("find nth largest element : " + nthLargest);
-		//print duplicates....
+		// print duplicates....
 		List<Integer> obj = list.stream().filter(n -> Collections.frequency(list, n) > 1).distinct()
 				.collect(Collectors.toList());
-		System.out.println("print duplicates..... : "+obj);
+		System.out.println("print duplicates..... : " + obj);
+		//Remove duplicates
+		List<Integer> remove = list.stream().distinct().collect(Collectors.toList());
+		System.out.println("remove duplicates " + remove);
 
 	}
 }

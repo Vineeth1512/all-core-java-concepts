@@ -1,13 +1,18 @@
 package sample.programs;
+class Student{
+    String name;
+    int rollNo;
+    Student(int num){
+    rollNo = num;
+    }   
+    public void print(){
+    System.out.print(name +" " + rollNo+"");
+    }
+}
 
 public class Sample {
-	 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int i=2;
-		System.out.println(i++);
-	
-
-}
+    public static void main(String[] args) {
+    Student s = new Student(12);
+    s.print();
+    }
 }

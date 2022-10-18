@@ -4,13 +4,16 @@ import java.util.Optional;
 
 public class OptionalClassProgram {
 	public static void main(String[] args) {
-		String str[] = new String[10];
-		Optional<String> obj = Optional.ofNullable(str[5]);
+		//String str[] = new String[10];
+
+		String s = "vineeth";
+		Optional<String> obj = Optional.ofNullable(s);
 		if (obj.isPresent()) {
-			String w = str[5].toUpperCase();
-			System.out.println(w);
+			// String w = str[5].toUpperCase();
+			System.out.println("value is " + s);
 		} else {
-			System.out.println("String is null");
+			String value =obj.orElse("default");
+			System.out.println("value is not present "+value );
 		}
 
 	}
