@@ -3,15 +3,13 @@ package abstraction.com;
 public class Citi extends Bank {
 
 	@Override
-	String getName() {
+	public void loan() {
 		// TODO Auto-generated method stub
-		return null;
+		
 	}
+
 
 	
 
-	 int getIntrestRatde() {
-			return 0;
-		}
 
 }

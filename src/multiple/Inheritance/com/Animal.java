@@ -1,11 +1,9 @@
 package multiple.Inheritance.com;
 
-class Animal implements AnimalEat, AnimalTravel {
-	public void eat() {
-		System.out.println("Animal is eating");
-	}
+public class Animal implements AnimalTravel, AnimalEat {
 
-	public void travel() {
-		System.out.println("Animal is travelling");
+	@Override
+	public void eat() {
+
 	}
 }

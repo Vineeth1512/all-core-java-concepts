@@ -1,17 +1,15 @@
 package abstraction.com;
 
-public class HDFC  extends Bank{
+public class HDFC extends Bank {
 
 	@Override
-	int getIntrestRatde() {
-		return 9;
+	public void loan() {
+		System.out.println("From loan method ");
+
 	}
 
-	@Override
-	String getName() {
-		// TODO Auto-generated method stub
-		return null;
+	public void intrest() {
+		System.out.println("From intrest method");
 	}
-	//ArithmeticException
 
 }

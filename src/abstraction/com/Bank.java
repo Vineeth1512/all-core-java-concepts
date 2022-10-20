@@ -1,9 +1,14 @@
 package abstraction.com;
 
 public abstract class Bank {
-	 int getIntrestRatde() {
-		return 0;
+	public abstract void loan();
+
+	public void credit() {
+		System.out.println("Credit to bank.");
 	}
 
-	abstract String getName();
+	public void debit() {
+		System.out.println("Debited from bank.");
+	}
+
 }

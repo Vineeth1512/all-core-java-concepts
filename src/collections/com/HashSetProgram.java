@@ -14,7 +14,8 @@ public class HashSetProgram {
 		obj.add(5);
 		obj.add(null);
 		obj.add(5);
-		System.out.println(obj);
+		System.out.println(obj.hashCode());obj.hashCode();
+		
 
 		Iterator<Object> itr = obj.iterator();
 		while (itr.hasNext()) {

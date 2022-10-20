@@ -3,12 +3,13 @@ package sample.programs;
 import java.util.Scanner;
 
 public class Armstrong {
-	public static int Arm(int num) {
+	public static double Arm(int num) {
 		int temp = num;
-		int rem, sum = 0;
+		int rem;
+		double sum = 0;
 		while (num > 0) {
 			rem = num % 10;
-			sum = sum + (rem * rem * rem);
+			sum = sum + Math.pow(rem, 3);
 			num = num / 10;
 		}
 
@@ -24,6 +25,8 @@ public class Armstrong {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("enter the number");
 		System.out.println(Arm(scan.nextInt()));
+
+		System.out.println();
 
 	}
 }

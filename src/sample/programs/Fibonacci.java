@@ -26,25 +26,23 @@ public class Fibonacci {
 	}
 
 	public static void main(String[] args) {
+		fibo(0, 1);
 
-		Scanner scan = new Scanner(System.in);
-		System.out.println("enter the number 1");
-		int a = scan.nextInt();
-		System.out.println("enter the number 2");
-		int b = scan.nextInt();
+		int fiblength = 10;
+		int[] num = new int[fiblength];
+		// Assign values 0 and 1 to the 0 and 1 indices of the defined array
+		num[0] = 0;
+		num[1] = 1;
 
-		 fibo(a, b);
+		// Logic for getting the values of all the indices of the array using for loop
+		for (int i = 2; i < fiblength; i++) {
+			num[i] = num[i - 1] + num[i - 2];
+		}
 
-		int n1 = 0, n2 = 1, n3;
-		System.out.println(n1);
-		System.out.println(n2);
-		for (int i = 1; i < 100; i++) {
-			n3 = n1 + n2;
-
-			System.out.println(" "+n3);
-			n1 = n2;
-			n2 = n3;
-
+		System.out.print("fibonacci series: ");
+		// Printing the fibonacci series
+		for (int i = 0; i < fiblength; i++) {
+			System.out.print(num[i] + " ");
 		}
 
 	}
